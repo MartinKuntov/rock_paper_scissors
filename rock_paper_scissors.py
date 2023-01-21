@@ -1,4 +1,5 @@
 import random
+from stringcolor import *
 
 rock = "Rock"
 paper = "Paper"
@@ -30,8 +31,8 @@ print(f"The computer chose {computer_move}")
 if player_turn == rock and computer_move == scissors or \
         player_turn == paper and computer_move == rock or \
         player_turn == scissors and computer_move == paper:
-    print("You win!")
+    print(cs("You win!", "Lime"))
 elif player_turn == computer_move:
-    print("Draw!")
+    print(cs("Draw!", "Grey"))
 else:
-    print("You lose!")
+    print(cs("You lose!", "Red"))
